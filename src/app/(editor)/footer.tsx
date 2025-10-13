@@ -12,20 +12,13 @@ export default function Footer() {
       <p className="text-center text-muted-foreground">
         Made by{" "}
         <Link
-          href={TINYBYTE_LABS_URL}
+          href={"https://siteassist.io?utm_source=codetoimg"}
           target="_blank"
           className="font-medium text-foreground underline-offset-2 hover:underline"
         >
-          TinyByte Labs
+          SiteAssist.io
         </Link>
       </p>
-      <Link
-        href={BUY_ME_A_COFFEE_URL}
-        target="_blank"
-        className="font-medium text-muted-foreground underline-offset-2 hover:text-accent-foreground hover:underline"
-      >
-        Buy me a Coffee
-      </Link>
       <Link
         href={GITHUB_REPO}
         target="_blank"
@@ -39,13 +32,6 @@ export default function Footer() {
         className="font-medium text-muted-foreground underline-offset-2 hover:text-accent-foreground hover:underline"
       >
         Twitter
-      </Link>
-      <Link
-        href="https://v1.codetoimg.com"
-        target="_blank"
-        className="font-medium text-muted-foreground underline-offset-2 hover:text-accent-foreground hover:underline"
-      >
-        CodeToImg v1
       </Link>
     </footer>
   );

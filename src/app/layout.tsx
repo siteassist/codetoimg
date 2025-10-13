@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import ThemeProvider from "@/components/theme-provider";
 import { Provider as JotaiProvider } from "jotai";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,6 +49,16 @@ export default function RootLayout({
           "flex min-h-screen flex-col antialiased",
         )}
       >
+        <Script id="siteassist" type="text/javascript">
+          {`!function(t,e,c,n,s){if(t[s])return;const i=t[s]=function(){i._q.push(arguments)};i._q=[];const o=e.createElement("script");o.async=!0,o.src="https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/widget/latest/widget.js",e.head.appendChild(o)}(window,document,0,0,"SiteAssist");`}
+        </Script>
+
+        <Script id="siteassist-init" type="text/javascript">
+          {`SiteAssist("init", {
+            apiKey: "pk_kmyn8JrTWynarZsnArei6TAgY5KoM1Xa",
+            theme: "auto",
+          });`}
+        </Script>
         <Analytics />
         <ThemeProvider>
           <TooltipProvider>

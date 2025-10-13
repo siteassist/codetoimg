@@ -29,6 +29,14 @@ const ads = [
     appStoreUrl:
       "https://apps.apple.com/ae/app/tweet-ai-ai-tweet-generator/id6473770693",
   },
+  {
+    title: "SiteAssist.io",
+    imageUrl: "/images/siteassist-icon.webp",
+    descriptions: [
+      "Integrate SiteAssist AI on your website in minutes. Trained on your content, it answers customers, performs internal actions, and blends seamlessly anywhere.",
+    ],
+    url: "https://siteassist.io",
+  },
 ];
 
 export default function Editor() {
@@ -118,6 +126,13 @@ export default function Editor() {
                   className="h-fit w-40"
                 />
               </Link>
+            )}
+            {ad.url && (
+              <Button asChild>
+                <Link href={ad.url} className="mt-8">
+                  Visit Site
+                </Link>
+              </Button>
             )}
           </div>
           <Tooltip>

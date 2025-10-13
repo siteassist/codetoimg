@@ -80,8 +80,9 @@
 }
 
 .cm-editor .cm-scroller {
-  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
-    "Courier New", monospace;
+  font-family:
+    Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New",
+    monospace;
 }
 .polka {
   background-image: radial-gradient(#e2e8f0 0.7px, #fff 1px);
@@ -94,7 +95,8 @@
 
 .transparent-grid {
   background-color: #ffffff;
-  background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%),
+  background-image:
+    linear-gradient(45deg, #e2e8f0 25%, transparent 25%),
     linear-gradient(-45deg, #e2e8f0 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #e2e8f0 75%),
     linear-gradient(-45deg, transparent 75%, #e2e8f0 75%);
@@ -108,7 +110,8 @@
 
 .dark .transparent-grid {
   background-color: #020817;
-  background-image: linear-gradient(45deg, #1e293b 25%, transparent 25%),
+  background-image:
+    linear-gradient(45deg, #1e293b 25%, transparent 25%),
     linear-gradient(-45deg, #1e293b 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #1e293b 75%),
     linear-gradient(-45deg, transparent 75%, #1e293b 75%);

@@ -15,8 +15,8 @@ export type ExportSettings = {
 
 const filter = (node: any) => {
   const exclusionClasses = ["remove-me", "secret-div"];
-  return !exclusionClasses.some(
-    (classname) => node?.classList?.contains(classname),
+  return !exclusionClasses.some((classname) =>
+    node?.classList?.contains(classname),
   );
 };
 

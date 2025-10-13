@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check . --ignore-path .gitignore"
   },
   "dependencies": {
     "@codemirror/state": "^6.3.2",
