@@ -1,8 +1,6 @@
 import {
-  BUY_ME_A_COFFEE_URL,
   GITHUB_REPO,
-  TINYBYTE_LABS_URL,
-  TWITTER_URL,
+  TWITTER_URL
 } from "@/constants";
 import Link from "next/link";
 
@@ -19,6 +17,13 @@ export default function Footer() {
           SiteAssist.io
         </Link>
       </p>
+      <Link
+        href={'/home'}
+        target="_blank"
+        className="font-medium text-muted-foreground underline-offset-2 hover:text-accent-foreground hover:underline"
+      >
+        Home
+      </Link>
       <Link
         href={GITHUB_REPO}
         target="_blank"
